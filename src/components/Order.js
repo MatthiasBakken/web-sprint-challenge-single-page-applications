@@ -90,17 +90,17 @@ const Order = () => {
             <label>Topping One: </label>
             <select name="topping1" value={values.topping1} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping1 && touched.topping1 ? (
               <div>{errors.topping1}</div>
@@ -108,17 +108,17 @@ const Order = () => {
             <label>Topping Two: </label>
             <select name="topping2" value={values.topping2} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping2 && touched.topping2 ? (
               <div>{errors.topping2}</div>
@@ -126,17 +126,17 @@ const Order = () => {
             <label>Topping Three: </label>
             <select name="topping3" value={values.topping3} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping3 && touched.topping3 ? (
               <div>{errors.topping3}</div>
@@ -144,17 +144,17 @@ const Order = () => {
             <label>Topping Four: </label>
             <select name="topping4" value={values.topping4} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping4 && touched.topping4 ? (
               <div>{errors.topping4}</div>
@@ -162,17 +162,17 @@ const Order = () => {
             <label>Topping Five: </label>
             <select name="topping5" value={values.topping5} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping5 && touched.topping5 ? (
               <div>{errors.topping5}</div>
@@ -180,17 +180,17 @@ const Order = () => {
             <label>Topping Six: </label>
             <select name="topping6" value={values.topping6} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping6 && touched.topping6 ? (
               <div>{errors.topping6}</div>
@@ -198,17 +198,17 @@ const Order = () => {
             <label>Topping Seven: </label>
             <select name="topping7" value={values.topping7} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping7 && touched.topping7 ? (
               <div>{errors.topping7}</div>
@@ -216,17 +216,17 @@ const Order = () => {
             <label>Topping Eight: </label>
             <select name="topping8" value={values.topping8} onChange={handleChange} onBlur={handleBlur} >
               <option value="" label="Select a topping" />
-              <option value="pepperoni" label="Pepperoni" />
-              <option value="onions" label="Onions" />
-              <option value="garlic" label="Garlic" />
-              <option value="olives" label="Olives" />
-              <option value="goatCheese" label="Goat Cheese" />
-              <option value="jalepenos" label="Jalepenos" />
-              <option value="bellPepper" label="Bell Pepper" />
-              <option value="anchovies" label="Anchovies" />
-              <option value="beef" label="Beef" />
-              <option value="chicken" label="chicken" />
-              <option value="bbqChicken" label="BBQ Chicken" />
+              <option value="Pepperoni" label="Pepperoni" />
+              <option value="Onions" label="Onions" />
+              <option value="Garlic" label="Garlic" />
+              <option value="Olives" label="Olives" />
+              <option value="Goat Cheese" label="Goat Cheese" />
+              <option value="Jalepenos" label="Jalepenos" />
+              <option value="Bell Pepper" label="Bell Pepper" />
+              <option value="Anchovies" label="Anchovies" />
+              <option value="Beef" label="Beef" />
+              <option value="Chicken" label="chicken" />
+              <option value="BBQ Chicken" label="BBQ Chicken" />
             </select>
             {errors.topping8 && touched.topping8 ? (
               <div>{errors.topping8}</div>

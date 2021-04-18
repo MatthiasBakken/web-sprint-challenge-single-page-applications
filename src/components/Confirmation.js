@@ -18,7 +18,7 @@ const Confirmation = () => {
     urlArray.forEach( item => {
       if ( item.slice( 0, 2 ) === "to" ) {
         console.log( item.slice( 0, 2 ) );
-        toppings.push( item.split( ':' )[ 1 ] );
+        toppings.push( item.split( ':' )[ 1 ].replace(/[0]/g, " ") );
       }
     } );
     console.log( toppings );

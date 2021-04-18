@@ -1,6 +1,9 @@
 header {
 	position: sticky;
 	top: 0;
+	background-color: white;
+	padding-bottom: 10px;
+	border-bottom: solid 2px chocolate;
 }
 h1 {
 	display: flex;
