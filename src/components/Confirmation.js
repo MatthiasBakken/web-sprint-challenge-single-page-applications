@@ -5,7 +5,7 @@ const Confirmation = () => {
 
   const getParameterByName = ( url = window.location.href ) => {
 
-    const urlStr = url.replace( /[2%.{}]/g, "" );
+    const urlStr = url.replace( /[2%{}]/g, "" );
     const urlArray = urlStr.split( '?' )[ 1 ].split( ',' );
     const firstName = urlArray[ 0 ].split( ':' )[ 1 ];
     const lastName = urlArray[ 1 ].split( ':' )[ 1 ];

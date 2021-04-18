@@ -26,6 +26,25 @@ const SignupSchema = Yup.object().shape( {
 
 const Order = () => {
 
+  const selector = ( name, value, onChangeHandler, onBlurHandler ) => {
+    return (
+      <select name={name} value={value} onChange={onChangeHandler} onBlur={onBlurHandler} >
+        <option value="" label="Select a topping" />
+        <option value="Pepperoni" label="Pepperoni" />
+        <option value="Onions" label="Onions" />
+        <option value="Garlic" label="Garlic" />
+        <option value="Olives" label="Olives" />
+        <option value="Goat Cheese" label="Goat Cheese" />
+        <option value="Jalepenos" label="Jalepenos" />
+        <option value="Bell Pepper" label="Bell Pepper" />
+        <option value="Anchovies" label="Anchovies" />
+        <option value="Beef" label="Beef" />
+        <option value="Chicken" label="chicken" />
+        <option value="BBQ Chicken" label="BBQ Chicken" />
+      </select>
+    )
+  }
+
   return (
 
     <div className="form-container">
@@ -75,173 +94,71 @@ const Order = () => {
             <label >First Name: </label>
             <Field name="firstName" />
             {errors.firstName && touched.firstName ? (
-              <div>{errors.firstName}</div>
+              <div className="error-div">{errors.firstName}</div>
             ) : null}
             <label>Last Name: </label>
             <Field name="lastName" />
             {errors.lastName && touched.lastName ? (
-              <div>{errors.lastName}</div>
+              <div className="error-div">{errors.lastName}</div>
             ) : null}
             <label>Email: </label>
             <Field name="email" type="email" />
             {errors.email && touched.email ? (
-              <div>{errors.email}</div>
+              <div className="error-div">{errors.email}</div>
             ) : null}
             <label>Topping One: </label>
-            <select name="topping1" value={values.topping1} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping1', values.topping1, handleChange, handleBlur)}
             {errors.topping1 && touched.topping1 ? (
-              <div>{errors.topping1}</div>
+              <div className="error-div">{errors.topping1}</div>
             ) : null}
             <label>Topping Two: </label>
-            <select name="topping2" value={values.topping2} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping2', values.topping2, handleChange, handleBlur)}
             {errors.topping2 && touched.topping2 ? (
-              <div>{errors.topping2}</div>
+              <div className="error-div">{errors.topping2}</div>
             ) : null}
             <label>Topping Three: </label>
-            <select name="topping3" value={values.topping3} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping3', values.topping3, handleChange, handleBlur)}
             {errors.topping3 && touched.topping3 ? (
-              <div>{errors.topping3}</div>
+              <div className="error-div">{errors.topping3}</div>
             ) : null}
             <label>Topping Four: </label>
-            <select name="topping4" value={values.topping4} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping4', values.topping4, handleChange, handleBlur)}
             {errors.topping4 && touched.topping4 ? (
-              <div>{errors.topping4}</div>
+              <div className="error-div">{errors.topping4}</div>
             ) : null}
             <label>Topping Five: </label>
-            <select name="topping5" value={values.topping5} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping5', values.topping5, handleChange, handleBlur)}
             {errors.topping5 && touched.topping5 ? (
-              <div>{errors.topping5}</div>
+              <div className="error-div">{errors.topping5}</div>
             ) : null}
             <label>Topping Six: </label>
-            <select name="topping6" value={values.topping6} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping6', values.topping6, handleChange, handleBlur)}
             {errors.topping6 && touched.topping6 ? (
-              <div>{errors.topping6}</div>
+              <div className="error-div">{errors.topping6}</div>
             ) : null}
             <label>Topping Seven: </label>
-            <select name="topping7" value={values.topping7} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping7', values.topping7, handleChange, handleBlur)}
             {errors.topping7 && touched.topping7 ? (
-              <div>{errors.topping7}</div>
+              <div className="error-div">{errors.topping7}</div>
             ) : null}
             <label>Topping Eight: </label>
-            <select name="topping8" value={values.topping8} onChange={handleChange} onBlur={handleBlur} >
-              <option value="" label="Select a topping" />
-              <option value="Pepperoni" label="Pepperoni" />
-              <option value="Onions" label="Onions" />
-              <option value="Garlic" label="Garlic" />
-              <option value="Olives" label="Olives" />
-              <option value="Goat Cheese" label="Goat Cheese" />
-              <option value="Jalepenos" label="Jalepenos" />
-              <option value="Bell Pepper" label="Bell Pepper" />
-              <option value="Anchovies" label="Anchovies" />
-              <option value="Beef" label="Beef" />
-              <option value="Chicken" label="chicken" />
-              <option value="BBQ Chicken" label="BBQ Chicken" />
-            </select>
+            {selector('topping8', values.topping8, handleChange, handleBlur)}
             {errors.topping8 && touched.topping8 ? (
-              <div>{errors.topping8}</div>
+              <div className="error-div">{errors.topping8}</div>
             ) : null}
             <label>Special Instructions: </label>
             <Field name="specialInstructions" />
             {errors.specialInstructions && touched.specialInstructions ? (
-              <div>{errors.specialInstructions}</div>
+              <div className="error-div">{errors.specialInstructions}</div>
             ) : null}
             <label>Terms of Service: </label>
             <Field name="terms" type="checkbox" id="terms" />
             {errors.terms && touched.terms ? (
-              <div>{errors.terms}</div>
+              <div className="error-div">{errors.terms}</div>
             ) : null}
-            <button type="submit" disabled={!( dirty && isValid && values.terms )} >Place Order</button>
+            <span className="button-container">
+              <button type="submit" disabled={!( dirty && isValid && values.terms )} className="glow-on-hover" >Place Order</button>
+            </span>
           </Form>
         )}
       </Formik>
