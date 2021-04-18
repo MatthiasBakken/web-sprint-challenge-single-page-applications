@@ -11,15 +11,17 @@ import './App.css';
 const App = () => {
   return (
     <div>
-      <h1>Lambda Eats</h1>
-      <nav>
-        <Link to="/">
-          Home
-        </Link>
-        <Link to="/pizza">
-          Order
-        </Link>
-      </nav>
+      <header>
+        <h1>Lambda Eats</h1>
+        <nav>
+          <Link to="/">
+            Home
+          </Link>
+          <Link to="/pizza">
+            Order
+          </Link>
+        </nav>
+      </header>
       <Switch>
         <Route exact path="/">
           <Home />
