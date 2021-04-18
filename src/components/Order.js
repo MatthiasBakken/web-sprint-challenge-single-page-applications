@@ -66,7 +66,7 @@ const Order = () => {
             // window.history.replaceState( res.data, 'confirmation', `/confirmation` );
             const response = JSON.stringify( res.data );
             window.location.replace( `/confirmation?${response}` );
-            return res.data;
+            console.log( res );
           } );
         }}
       >
